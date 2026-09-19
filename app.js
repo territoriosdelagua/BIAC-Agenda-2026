@@ -18,6 +18,7 @@ const actividades = [
         titulo: "Actividad de prueba 1",
         tematica: "TERRITORIO",
         sede: "Teatro Oficial Juan de Vera",
+        ubicacion: "CORRIENTES",
         presentador: "Presentador/a de prueba",
         profesion: "Arquitectura",
         foto: "images/expositor-01.png",
@@ -33,6 +34,7 @@ const actividades = [
         titulo: "Actividad de prueba 2",
         tematica: "CIUDAD",
         sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
         presentador: "Presentador/a de prueba",
         profesion: "Urbanismo",
         foto: "images/expositor-02.png",
@@ -48,6 +50,7 @@ const actividades = [
         titulo: "Actividad de prueba 3",
         tematica: "ARQUITECTURA",
         sede: "FAU-UNNE",
+        ubicacion: "CHACO",
         presentador: "Presentador/a de prueba",
         profesion: "Arquitectura",
         foto: "images/expositor-03.png",
@@ -63,6 +66,7 @@ const actividades = [
         titulo: "Actividad de prueba 4",
         tematica: "ARQUITECTURA",
         sede: "Teatro Oficial Juan de Vera",
+        ubicacion: "CORRIENTES",
         presentador: "Presentador/a de prueba",
         profesion: "Arquitectura",
         estado: "CONFIRMADA",
@@ -77,6 +81,7 @@ const actividades = [
         titulo: "Actividad de prueba 5",
         tematica: "TERRITORIO",
         sede: "FAU-UNNE",
+        ubicacion: "CHACO",
         presentador: "Presentador/a de prueba",
         profesion: "Urbanismo",
         estado: "REPROGRAMADA",
@@ -91,6 +96,7 @@ const actividades = [
         titulo: "Actividad de prueba 6",
         tematica: "CIUDAD",
         sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
         presentador: "Presentador/a de prueba",
         profesion: "Arquitectura",
         estado: "CANCELADA",
@@ -114,7 +120,7 @@ const sedes = {
             "Teatro histórico de la ciudad de Corrientes.",
 
         imagen:
-            "images/teatro-juan-de-vera.jpg",
+            "images/sedes/teatro-juan-de-vera.jpg",
 
         mapa:
             "https://www.google.com/maps/search/?api=1&query=Teatro+Oficial+Juan+de+Vera+Corrientes"
@@ -130,7 +136,7 @@ const sedes = {
             "Espacio cultural y auditorio destinado a actividades académicas y culturales.",
 
         imagen:
-            "images/auditorio-julian-zini.jpg",
+            "images/sedes/auditorio-julian-zini.jpg",
 
         mapa:
             "https://www.google.com/maps/search/?api=1&query=Auditorio+Julian+Zini+Blas+Benjamin+de+la+Vega+1699+Corrientes"
@@ -146,7 +152,7 @@ const sedes = {
             "Facultad de Arquitectura y Urbanismo de la Universidad Nacional del Nordeste.",
 
         imagen:
-            "images/fau-unne-1.jpeg",
+            "images/sedes/fau-unne-1.jpeg",
 
         mapa:
             "https://www.google.com/maps/search/?api=1&query=FAU+UNNE+Av+Las+Heras+727+Resistencia+Chaco"
@@ -162,7 +168,7 @@ const sedes = {
             "Museo de Arte Contemporáneo de Corrientes.",
 
         imagen:
-            "images/macc.jpg",
+            "images/sedes/macc.jpg",
 
         mapa:
             "https://www.google.com/maps/search/?api=1&query=Museo+de+Arte+Contemporaneo+9+de+Julio+1098+Corrientes"
@@ -187,6 +193,63 @@ const botonesFiltros =
 const tituloDia =
     document.getElementById("titulo-dia");
 
+const busqueda =
+    document.querySelector(".busqueda");
+
+const botonBusqueda =
+    document.querySelector(".busqueda-btn");
+
+const campoBusqueda =
+    document.querySelector(".busqueda-input");
+
+const auspiciantesModal =
+    document.querySelector(".auspiciantes-modal");
+
+const botonAuspiciantes =
+    document.querySelector(".auspiciantes-btn");
+
+const botonInstituciones =
+    document.querySelector(".instituciones-btn");
+
+const cerrarAuspiciantes =
+    document.querySelector(".auspiciantes-modal-cerrar");
+
+const tituloAuspiciantes =
+    document.querySelector("#auspiciantes-titulo");
+
+const imagenAuspiciantes =
+    document.querySelector("#auspiciantes-imagen");
+
+const opinionModal =
+    document.querySelector(".opinion-modal");
+
+const opinionForm =
+    document.querySelector("#opinion-form");
+
+const botonOpinion =
+    document.querySelector(".opinion-btn");
+
+const cerrarOpinion =
+    document.querySelector(".opinion-modal-cerrar");
+
+const opinionMensaje =
+    document.querySelector("#opinion-mensaje");
+
+const opinionImagen =
+    document.querySelector("#opinion-imagen");
+
+const opinionAnonima =
+    document.querySelector("#opinion-anonima");
+
+const opinionNombre =
+    document.querySelector("#opinion-nombre");
+
+const opinionError =
+    document.querySelector(".opinion-error");
+
+const opinionesLista =
+    document.querySelector(".opiniones-lista");
+
 
 // =====================================================
 // 4. FILTROS ACTIVOS
@@ -197,6 +260,10 @@ let filtroTipo = "TODOS";
 let filtroTematica = "TODAS";
 
 let filtroEstado = "TODOS";
+
+let filtroUbicacion = "TODAS";
+
+let terminoBusqueda = "";
 
 
 // =====================================================
@@ -232,12 +299,29 @@ function mostrarActividades() {
                 filtroEstado === "TODOS" ||
                 actividad.estado === filtroEstado;
 
+            const coincideUbicacion =
+                filtroUbicacion === "TODAS" ||
+                actividad.ubicacion === filtroUbicacion;
+
+            const textoActividad = [
+                actividad.titulo,
+                actividad.tipo,
+                actividad.tematica,
+                actividad.sede,
+                actividad.presentador
+            ].join(" ").toLowerCase();
+
+            const coincideBusqueda =
+                textoActividad.includes(terminoBusqueda);
+
 
             return (
                 coincideDia &&
                 coincideTipo &&
                 coincideTematica &&
-                coincideEstado
+                coincideEstado &&
+                coincideUbicacion &&
+                coincideBusqueda
             );
 
         });
@@ -277,8 +361,15 @@ function mostrarActividades() {
 
         tarjeta.innerHTML = `
             <div class="horario">
-                <strong class="inicio">${actividad.horaInicio}</strong>
-                <span class="fin">${actividad.horaFin}</span>
+
+                <strong class="inicio">
+                    ${actividad.horaInicio}
+                </strong>
+
+                <span class="fin">
+                    ${actividad.horaFin}
+                </span>
+
             </div>
 
             <div class="actividad-info">
@@ -294,9 +385,10 @@ function mostrarActividades() {
                 </p>
 
                 <p class="sede">
-                    <span>SEDE:</span>
+                    <span class="sede-etiqueta">SEDE:</span>
                     <button class="sede-btn" data-sede="${actividad.sede}">
-                        ${actividad.sede}
+                        <span class="sede-nombre">${actividad.sede}</span>
+                        <span class="sede-flecha" aria-hidden="true">&#8250;</span>
                     </button>
                 </p>
 
@@ -327,10 +419,6 @@ function mostrarActividades() {
                     ">
                         ${actividad.estado}
                     </span>
-
-                    <button class="opinion-btn">
-                        OPINIONES
-                    </button>
 
                 </div>
 
@@ -375,6 +463,165 @@ botonesDias.forEach(boton => {
         mostrarActividades();
 
     });
+
+});
+
+botonBusqueda.addEventListener("click", function() {
+
+    const estaAbierta =
+        busqueda.classList.toggle("abierta");
+
+    this.setAttribute("aria-expanded", estaAbierta);
+
+    if (estaAbierta) {
+        campoBusqueda.focus();
+    } else {
+        campoBusqueda.value = "";
+        terminoBusqueda = "";
+        mostrarActividades();
+    }
+
+});
+
+campoBusqueda.addEventListener("input", function() {
+
+    terminoBusqueda = this.value.trim().toLowerCase();
+
+    mostrarActividades();
+
+});
+
+function abrirAuspiciantes(tipo) {
+
+    auspiciantesModal.hidden = false;
+
+    const esInstituciones = tipo === "instituciones";
+
+    tituloAuspiciantes.textContent = esInstituciones
+        ? "INSTITUCIONES"
+        : "AUSPICIANTES";
+
+    imagenAuspiciantes.src = esInstituciones
+        ? "images/auspiciantes/ciones-fondoblanco.jpg"
+        : "images/auspiciantes/empresas.png";
+
+    imagenAuspiciantes.alt = esInstituciones
+        ? "Instituciones que participan en la Bienal 2026"
+        : "Empresas auspiciantes de la Bienal 2026";
+
+}
+
+botonAuspiciantes.addEventListener("click", function() {
+
+    abrirAuspiciantes("auspiciantes");
+
+});
+
+botonInstituciones.addEventListener("click", function() {
+
+    abrirAuspiciantes("instituciones");
+
+});
+
+cerrarAuspiciantes.addEventListener("click", function() {
+
+    auspiciantesModal.hidden = true;
+
+});
+
+auspiciantesModal.addEventListener("click", function(event) {
+
+    if (event.target === auspiciantesModal) {
+        auspiciantesModal.hidden = true;
+    }
+
+});
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        auspiciantesModal.hidden = true;
+        opinionModal.hidden = true;
+    }
+
+});
+
+botonOpinion.addEventListener("click", function() {
+
+    opinionModal.hidden = false;
+    opinionMensaje.focus();
+
+});
+
+cerrarOpinion.addEventListener("click", function() {
+
+    opinionModal.hidden = true;
+
+});
+
+opinionModal.addEventListener("click", function(event) {
+
+    if (event.target === opinionModal) {
+        opinionModal.hidden = true;
+    }
+
+});
+
+opinionAnonima.addEventListener("change", function() {
+
+    opinionNombre.disabled = this.checked;
+
+    if (this.checked) {
+        opinionNombre.value = "";
+    }
+
+});
+
+opinionForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const mensaje = opinionMensaje.value.trim();
+    const imagen = opinionImagen.files[0];
+
+    if (!mensaje && !imagen) {
+        opinionError.textContent = "Escribí un mensaje o seleccioná una imagen para enviar tu opinión.";
+        return;
+    }
+
+    opinionError.textContent = "";
+
+    const opinion = document.createElement("article");
+    opinion.className = "opinion opinion-nueva";
+
+    const autor = document.createElement("strong");
+    autor.textContent = opinionAnonima.checked || !opinionNombre.value.trim()
+        ? "Anónimo"
+        : opinionNombre.value.trim();
+
+    const fecha = document.createElement("span");
+    fecha.textContent = "Ahora";
+
+    opinion.append(autor, fecha);
+
+    if (mensaje) {
+        const texto = document.createElement("p");
+        texto.textContent = mensaje;
+        opinion.appendChild(texto);
+    }
+
+    if (imagen) {
+        const imagenOpinion = document.createElement("img");
+        imagenOpinion.src = URL.createObjectURL(imagen);
+        imagenOpinion.alt = "Imagen compartida en una opinión";
+        opinion.appendChild(imagenOpinion);
+    }
+
+    opinionesLista.prepend(opinion);
+    opinionForm.reset();
+    opinionAnonima.checked = true;
+    opinionNombre.disabled = true;
+    opinionModal.hidden = true;
 
 });
 
@@ -449,6 +696,12 @@ botonesFiltros.forEach(boton => {
         if (tipoFiltro === "estado") {
 
             filtroEstado = valor;
+
+        }
+
+        if (tipoFiltro === "ubicacion") {
+
+            filtroUbicacion = valor;
 
         }
 

@@ -28,6 +28,14 @@
     </div>
 
     <div class="hero-links">
+        <button class="hero-link instituciones-btn" type="button">
+            INSTITUCIONES
+        </button>
+
+        <button class="hero-link auspiciantes-btn" type="button">
+            AUSPICIANTES
+        </button>
+
         <a href="https://sites.google.com/view/bienalterritoriosdelagua" target="_blank">
             SITIO WEB
         </a>
@@ -145,6 +153,29 @@
 
             <div class="filtro-grupo">
 
+                <h3>UBICACIÓN</h3>
+
+                <div class="botones-filtro">
+
+                    <button class="filtro activo" data-filtro="ubicacion" data-valor="TODAS">
+                        TODAS
+                    </button>
+
+                    <button class="filtro" data-filtro="ubicacion" data-valor="CHACO">
+                        CHACO
+                    </button>
+
+                    <button class="filtro" data-filtro="ubicacion" data-valor="CORRIENTES">
+                        CORRIENTES
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="filtro-grupo">
+
                 <h3>ESTADO</h3>
 
                 <div class="botones-filtro">
@@ -176,7 +207,25 @@
 
         <section class="programa">
 
-            <h2 id="titulo-dia">24 SEPTIEMBRE — JUEVES</h2>
+            <div class="programa-cabecera">
+
+                <h2 id="titulo-dia">24 SEPTIEMBRE — JUEVES</h2>
+
+                <div class="busqueda">
+                    <button class="busqueda-btn" type="button" aria-expanded="false">
+                        <span class="busqueda-icono" aria-hidden="true"></span>
+                        BUSCAR
+                    </button>
+
+                    <input
+                        class="busqueda-input"
+                        type="search"
+                        placeholder="Buscar actividad"
+                        aria-label="Buscar actividad"
+                    >
+                </div>
+
+            </div>
 
             <div id="actividades">
 
@@ -195,8 +244,8 @@
 
                 <h2>OPINIONES DE LA COMUNIDAD</h2>
 
-                <button class="opinion-btn">
-                    Haz click aquí para dejar tu opinión
+                <button class="opinion-btn" type="button">
+                    DEJAR MI OPINIÓN
                 </button>
 
             </div>
@@ -256,6 +305,78 @@
 
     <footer class="footer">
     </footer>
+
+    <div class="auspiciantes-modal" hidden>
+        <div class="auspiciantes-modal-contenido" role="dialog" aria-modal="true" aria-labelledby="auspiciantes-titulo">
+            <button class="auspiciantes-modal-cerrar" type="button" aria-label="Cerrar auspiciantes">
+                ×
+            </button>
+
+            <h2 id="auspiciantes-titulo">AUSPICIANTES</h2>
+
+            <p class="auspiciantes-gracias">¡Gracias por acompañarnos!</p>
+
+            <div class="auspiciantes-panel">
+                <img
+                    id="auspiciantes-imagen"
+                    src="images/auspiciantes/empresas.png"
+                    alt="Empresas auspiciantes de la Bienal 2026"
+                >
+            </div>
+        </div>
+    </div>
+
+    <div class="opinion-modal" hidden>
+        <form class="opinion-modal-contenido" id="opinion-form" novalidate>
+            <button class="opinion-modal-cerrar" type="button" aria-label="Cerrar formulario de opinión">
+                ×
+            </button>
+
+            <h2>DEJAR MI OPINIÓN</h2>
+
+            <p class="opinion-modal-intro">
+                Compartí tu experiencia en la Bienal.
+            </p>
+
+            <label class="opinion-campo" for="opinion-mensaje">
+                <span class="opinion-campo-titulo">MENSAJE <small>(opcional)</small></span>
+                <textarea
+                    id="opinion-mensaje"
+                    placeholder="Contanos tu experiencia en la Bienal..."
+                ></textarea>
+            </label>
+
+            <label class="opinion-campo" for="opinion-imagen">
+                <span class="opinion-campo-titulo">IMAGEN <small>(opcional)</small></span>
+                <input
+                    type="file"
+                    id="opinion-imagen"
+                    accept="image/*"
+                >
+            </label>
+
+            <label class="opinion-identidad">
+                <input type="checkbox" id="opinion-anonima" checked>
+                Publicar como anónimo
+            </label>
+
+            <label class="opinion-campo" for="opinion-nombre">
+                <span class="opinion-campo-titulo">NOMBRE <small>(opcional)</small></span>
+                <input
+                    type="text"
+                    id="opinion-nombre"
+                    placeholder="Tu nombre (opcional)"
+                    disabled
+                >
+            </label>
+
+            <p class="opinion-error" role="alert" aria-live="polite"></p>
+
+            <button class="opinion-enviar" type="submit">
+                ENVIAR
+            </button>
+        </form>
+    </div>
 
 
     <!-- JAVASCRIPT -->
