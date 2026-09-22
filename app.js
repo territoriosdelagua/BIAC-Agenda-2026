@@ -12,50 +12,80 @@ const actividades = [
 
     {
         dia: "24",
-        horaInicio: "09:00",
-        horaFin: "10:00",
+        horaInicio: "10:00",
+        horaFin: "10:30",
         tipo: "CONFERENCIA",
-        titulo: "Actividad de prueba 1",
+        titulo: "Desterritorialización material",
         tematica: "TERRITORIO",
-        sede: "Teatro Oficial Juan de Vera",
+        sede: "MACC",
         ubicacion: "CORRIENTES",
-        presentador: "Presentador/a de prueba",
-        profesion: "Arquitectura",
-        foto: "images/expositor-01.png",
+        presentador: "FAU-UNNE",
+        profesion: "Arquitectura y Urbanismo",
+        foto: "images/expositores/fau.png",
         estado: "CONFIRMADA",
-        descripcion: "Breve descripción de prueba para visualizar cómo se verá la actividad."
+        descripcion: "Expone el arquitecto Alberto Mahave."
     },
 
     {
         dia: "24",
         horaInicio: "10:30",
-        horaFin: "11:30",
-        tipo: "MESA",
-        titulo: "Actividad de prueba 2",
+        horaFin: "11:00",
+        tipo: "CONFERENCIA",
+        titulo: "Acervo",
         tematica: "CIUDAD",
-        sede: "Auditorio Julián Zini",
+        sede: "MACC",
         ubicacion: "CORRIENTES",
-        presentador: "Presentador/a de prueba",
-        profesion: "Urbanismo",
-        foto: "images/expositor-02.png",
-        estado: "CANCELADA",
-        descripcion: "Breve descripción de prueba para visualizar cómo se verá la actividad."
+        presentador: "FAU-UNNE",
+        profesion: "Arquitectura y Urbanismo",
+        foto: "images/expositores/fau.png",
+        estado: "CONFIRMADA",
+        descripcion: "Expone la arquitecta Cecilia Coccato"
     },
 
     {
         dia: "24",
-        horaInicio: "12:00",
-        horaFin: "13:00",
-        tipo: "WORKSHOP",
-        titulo: "Actividad de prueba 3",
+        horaInicio: "11:00",
+        horaFin: "11:30",
+        tipo: "CONFERENCIA",
+        titulo: "Concurso: Plataforma insular",
         tematica: "ARQUITECTURA",
-        sede: "FAU-UNNE",
-        ubicacion: "CHACO",
-        presentador: "Presentador/a de prueba",
+        sede: "MACC",
+        ubicacion: "CORRIENTES",
+        presentador: "FAU-UNNE",
         profesion: "Arquitectura",
-        foto: "images/expositor-03.png",
-        estado: "REPROGRAMADA",
-        descripcion: "Breve descripción de prueba para visualizar cómo se verá la actividad."
+        foto: "images/expositores/fau.png",
+        estado: "CONFIRMADA",
+        descripcion: "Ganadores: 1° Premio / Villagra Lisandro Iván, 2° Premio / Zampa Fernando David, 3° Premio / Vera Valussi Valentina"
+    },
+    {
+        dia: "24",
+        horaInicio: "11:30",
+        horaFin: "12:00",
+        tipo: "CONFERENCIA",
+        titulo: "Taller Horizontal-FADU UNL",
+        tematica: "ARQUITECTURA",
+        sede: "MACC",
+        ubicacion: "CORRIENTES",
+        presentador: "UNNE, UCA y UNL",
+        profesion: "Arquitectura",
+        foto: "images/expositores/horizontal.png",
+        estado: "CONFIRMADA",
+        descripcion: "Encuentro de cátedras proyectuales innovadoras de la FAU-UNNE y UCA-BA."
+    },
+    {
+        dia: "24",
+        horaInicio: "12:00",
+        horaFin: "12:30",
+        tipo: "CONFERENCIA",
+        titulo: "FTyCA UNC",
+        tematica: "ARQUITECTURA",
+        sede: "MACC",
+        ubicacion: "CORRIENTES",
+        presentador: "UNC",
+        profesion: "Arquitectura",
+        foto: "images/expositores/unc.jpg",
+        estado: "CONFIRMADA",
+        descripcion: "Exposición a cargo de los arquitectos Nicolás Lindow y María Emilia Canclini"
     },
 
     {
@@ -171,7 +201,7 @@ const sedes = {
             "images/sedes/macc.jpg",
 
         mapa:
-            "https://www.google.com/maps/search/?api=1&query=Museo+de+Arte+Contemporaneo+9+de+Julio+1098+Corrientes"
+            "https://www.google.com/maps/place/Museo+de+Arte+Contempor%C3%A1neo/@-27.4666503,-58.8393177,17z/data=!3m1!4b1!4m6!3m5!1s0x94456d0047ac09a7:0xd89f7756a3f1e2f9!8m2!3d-27.4666503!4d-58.8367428!16s%2Fg%2F11x95nmyqp?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     }
 
 };
