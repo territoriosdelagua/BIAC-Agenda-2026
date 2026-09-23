@@ -607,51 +607,146 @@ opinionAnonima.addEventListener("change", function() {
 
 });
 
-opinionForm.addEventListener("submit", function(event) {
+opinionForm.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
     const mensaje = opinionMensaje.value.trim();
     const imagen = opinionImagen.files[0];
 
+    // Debe existir al menos mensaje o imagen
     if (!mensaje && !imagen) {
-        opinionError.textContent = "Escribí un mensaje o seleccioná una imagen para enviar tu opinión.";
+        opinionError.textContent =
+            "Escribí un mensaje o seleccioná una imagen para enviar tu opinión.";
         return;
     }
 
+    // Limpiar error
     opinionError.textContent = "";
 
-    const opinion = document.createElement("article");
-    opinion.className = "opinion opinion-nueva";
+    // Desactivar botón durante el envío
+    const botonEnviar =
+        opinionForm.querySelector(".opinion-enviar");
 
-    const autor = document.createElement("strong");
-    autor.textContent = opinionAnonima.checked || !opinionNombre.value.trim()
-        ? "Anónimo"
-        : opinionNombre.value.trim();
+    botonEnviar.disabled = true;
+    botonEnviar.textContent = "ENVIANDO...";
 
-    const fecha = document.createElement("span");
-    fecha.textContent = "Ahora";
+    try {
 
-    opinion.append(autor, fecha);
+        let imagenUrl = null;
 
-    if (mensaje) {
-        const texto = document.createElement("p");
-        texto.textContent = mensaje;
-        opinion.appendChild(texto);
+        // ==========================================
+        // 1. SUBIR IMAGEN SI EXISTE
+        // ==========================================
+
+        if (imagen) {
+
+            // Límite de 5 MB
+            if (imagen.size > 5 * 1024 * 1024) {
+                throw new Error(
+                    "La imagen no puede superar los 5 MB."
+                );
+            }
+
+            // Verificar que realmente sea una imagen
+            if (!imagen.type.startsWith("image/")) {
+                throw new Error(
+                    "El archivo seleccionado no es una imagen válida."
+                );
+            }
+
+            const extension =
+                imagen.name.split(".").pop().toLowerCase();
+
+            const nombreArchivo =
+                `${crypto.randomUUID()}.${extension}`;
+
+            const ruta =
+                `opiniones/${nombreArchivo}`;
+
+            const { error: errorImagen } =
+                await supabaseClient
+                    .storage
+                    .from("opiniones")
+                    .upload(ruta, imagen, {
+                        cacheControl: "3600",
+                        upsert: false,
+                        contentType: imagen.type
+                    });
+
+            if (errorImagen) {
+                throw errorImagen;
+            }
+
+            // Obtener URL pública
+            const { data: urlData } =
+                supabaseClient
+                    .storage
+                    .from("opiniones")
+                    .getPublicUrl(ruta);
+
+            imagenUrl = urlData.publicUrl;
+        }
+
+        // ==========================================
+        // 2. GUARDAR OPINIÓN EN LA BASE DE DATOS
+        // ==========================================
+
+        const nombre =
+            opinionAnonima.checked || !opinionNombre.value.trim()
+                ? "Anónimo"
+                : opinionNombre.value.trim();
+
+        const { error: errorOpinion } =
+            await supabaseClient
+                .from("opiniones")
+                .insert({
+                    mensaje: mensaje || null,
+                    nombre: nombre,
+                    anonima: opinionAnonima.checked,
+                    imagen_url: imagenUrl,
+                    aprobada: false
+                });
+
+        if (errorOpinion) {
+            throw errorOpinion;
+        }
+
+        // ==========================================
+        // 3. ÉXITO
+        // ==========================================
+
+        opinionForm.reset();
+
+        opinionAnonima.checked = true;
+        opinionNombre.disabled = true;
+
+        opinionError.textContent =
+            "¡Gracias! Tu opinión fue enviada y será revisada antes de publicarse.";
+
+        // Esperar un momento para que la persona pueda leerlo
+        setTimeout(function() {
+
+            opinionModal.hidden = true;
+
+            opinionError.textContent = "";
+
+            botonEnviar.disabled = false;
+            botonEnviar.textContent = "ENVIAR";
+
+        }, 2500);
+
+    } catch (error) {
+
+        console.error("Error al enviar opinión:", error);
+
+        opinionError.textContent =
+            error.message ||
+            "No pudimos enviar tu opinión. Intentá nuevamente.";
+
+        botonEnviar.disabled = false;
+        botonEnviar.textContent = "ENVIAR";
     }
-
-    if (imagen) {
-        const imagenOpinion = document.createElement("img");
-        imagenOpinion.src = URL.createObjectURL(imagen);
-        imagenOpinion.alt = "Imagen compartida en una opinión";
-        opinion.appendChild(imagenOpinion);
-    }
-
-    opinionesLista.prepend(opinion);
-    opinionForm.reset();
-    opinionAnonima.checked = true;
-    opinionNombre.disabled = true;
-    opinionModal.hidden = true;
 
 });
 

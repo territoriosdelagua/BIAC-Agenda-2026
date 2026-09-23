@@ -379,7 +379,21 @@
     </div>
 
 
-    <!-- JAVASCRIPT -->
+    <!-- SUPABASE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+        const SUPABASE_URL = "https://akzraemjkgymjbayuypd.supabase.co";
+        const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_2vhsR_GyOBjtU_S0R9ljwA_7H2AMNgS";
+
+        const supabaseClient = window.supabase.createClient(
+            SUPABASE_URL,
+            SUPABASE_PUBLISHABLE_KEY
+        );
+    </script>
+
+    <!-- JAVASCRIPT DE LA AGENDA -->
 
     <script src="app.js"></script>
 
