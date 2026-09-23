@@ -31,15 +31,15 @@ const actividades = [
         horaInicio: "10:30",
         horaFin: "11:00",
         tipo: "CONFERENCIA",
-        titulo: "Acervo",
+        titulo: "Misiones Moderna (1955-1965): Acervo y patrimonio arquitectónico",
         tematica: "CIUDAD",
         sede: "MACC",
         ubicacion: "CORRIENTES",
-        presentador: "FAU-UNNE",
-        profesion: "Arquitectura y Urbanismo",
-        foto: "images/expositores/fau.png",
+        presentador: "Cátedra de Arquitectura Moderna en Misiones",
+        profesion: "Mgter. Arq. Mario Daniel Melgarejo, Alina Bistoletti y Arq. Cecilia Coccato",
+        foto: "images/expositores/misionesmoderno.png",
         estado: "CONFIRMADA",
-        descripcion: "Expone la arquitecta Cecilia Coccato"
+        descripcion: "La Facultad de Arquitectura y Diseño (FAD), la Universidad Católica de Santa Fe (UCSF) -sede Santos Mártires (Posadas) y el Instituto de Historia (IHTCAP) presentan esta muestra que explora el patrimonio de la arquitectura moderna en Misiones durante el período 1955-1965."
     },
 
     {
@@ -70,7 +70,7 @@ const actividades = [
         profesion: "Arquitectura",
         foto: "images/expositores/horizontal.png",
         estado: "CONFIRMADA",
-        descripcion: "Encuentro de cátedras proyectuales innovadoras de la FAU-UNNE y UCA-BA."
+        descripcion: "El Taller Horizontal es un espacio de la FADU UNL que desarrolla una investigación continua sobre cómo proyectar en estos territorios frágiles e inciertos. Cada fragmento de esta geografía insular aporta enseñanzas a un proyecto infinito: imaginar el río Paraná como un laboratorio de proyectos. Esta investigación de varios años propone un enfoque amplio que interpela los diferentes puntos de contacto entre tierra y agua."
     },
     {
         dia: "24",
@@ -197,7 +197,7 @@ const actividades = [
         horaInicio: "20:00",
         horaFin: "22:00",
         tipo: "MUESTRAS",
-        titulo: "Inauguración de la muestra en el MACC",
+        titulo: "Inauguración: Entre lo estable y lo inestable.",
         tematica: "TODAS",
         sede: "MACC",
         ubicacion: "CORRIENTES",
@@ -207,8 +207,21 @@ const actividades = [
         estado: "CONFIRMADA",
         descripcion: "Es una muestra que reúne arquitectura, arte, fotografía y registro audiovisual del NEA y de otras regiones, para pensar el agua como condición del territorio y de nuestras formas de habitar."
     },
-
-
+    {
+        dia: "24",
+        horaInicio: "20:00",
+        horaFin: "22:00",
+        tipo: "MUESTRAS",
+        titulo: "Inauguración: Misiones Moderna (1955-1965).",
+        tematica: "ARQUITECTURA",
+        sede: "MACC",
+        ubicacion: "CORRIENTES",
+        presentador: "Estudio GAA-Corrientes ",
+        profesion: "Patrimonio, Arquitectura y Fotografía",
+        foto: "images/expositores/misionesmoderno.png",
+        estado: "CONFIRMADA",
+        descripcion: "Es una exposición que reúne la historia de la arquitectura moderna en Misiones teniendo en cuenta su contexto político, económico, social y territorial. La muestra se centra en el período comprendido entre 1955 y 1965, destacando la influencia de la modernidad en la arquitectura de la región y su relación con el paisaje natural y urbano."
+    },
 
 
 
@@ -288,7 +301,114 @@ const actividades = [
         foto: "images/expositores/valderrama.png",
         descripcion: "Master en Arquitectura del Paisaje por la Universidad de Illinois, su trayectoria profesional ha hecho énfasis en la puesta en valor y la sostenibilidad de territorios  periféricos, populares e inestables.Su práctica transdisciplinar y transescalar se caracteriza por un abordaje ecológico integral (social, simbólico, político y natural) interpelando el modelo extractivo y el imaginario moderno fósil de la ciudad, los territorios y los artefactos, cultivando un imaginario vegetal y un pisar leve."
     },
-
+    {
+        dia: "25",
+        horaInicio: "11:00",
+        horaFin: "11:30",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Magdalena Tagliabue y Arq. Carolina Koen",
+        tematica: "TERRITORIO",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Tagliabue y Koen",
+        profesion: "Buenos Aires",
+        estado: "CONFIRMADA",
+        foto: [
+            "images/expositores/tagliabue.png",
+            "images/expositores/koen.png"
+        ],
+        descripcion: "Magdalena Tagliabue y  Carolina Koen  son docentes en FADU-UBA y en Universidad Torcuato Di Tella. Juntas abordarán ejes claves: Suelos, Ecologías, Territorios y Comunidades —conceptos que ya desarrollaron para una edición especial de la revista PLOT y que ahora potencian la reflexión curatorial de la Bienal."
+    },
+    {
+        dia: "25",
+        horaInicio: "11:30",
+        horaFin: "12:00",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Juan Heras ",
+        tematica: "TERRITORIO",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Juan Heras",
+        profesion: "California",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/heras.png",
+        descripcion: "El estudio del Español Juan Heras instalado en California, Estados Unidos, trabaja las escalas de Planes urbanos y territoriales pero tambíen arquitectura en mas de 10 países, varios de ellos latinoamericanos"
+    },
+    {
+        dia: "25",
+        horaInicio: "14:00",
+        horaFin: "14:30",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Laura Bernaola",
+        tematica: "PAISAJE",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Laura Bernaola",
+        profesion: "Buenos Aires",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/bernaola.png",
+        descripcion: "Sus obras en entornos costeros e industriales juegan con la síntesis de la 'caja blanca' geométrica y la utilización de materiales nobles como la madera y la piedra, buscando mimetizarse y dialogar con la topografía (como los médanos y bosques costeros). Laura Bernaola y su estudio en los bordes costeros parece copiar los medanos que habita, a veces son curvas y otras;  rectas zigzagueantes. La madera como insumo para una arquitectura que se instala tan efimera como estable, en un territorio en donde todo se moviliza de una temporada a otra."
+    },
+     {
+        dia: "25",
+        horaInicio: "14:30",
+        horaFin: "15:00",
+        tipo: "CONFERENCIA",
+        titulo: "Mg. Arq. Soledad Ferrería",
+        tematica: "PAISAJE",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Soledad Ferrería",
+        profesion: "Entre Ríos",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/ferrería.png",
+        descripcion: "La arquitecta Soledad Ferrería tiene su estudio  en Entre Ríos desde 2006. Sus proyectos equilibran la función productiva, la conservación ambiental y el valor cultural. Mesa de trabajo 1: Aguas Arcilla. Lámina 02: Acuerdos. Lámina .3: Artefactos"
+    },
+     {
+        dia: "25",
+        horaInicio: "15:00",
+        horaFin: "15:30",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Celeste Garaffa",
+        tematica: "PAISAJE",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Celeste Garaffa",
+        profesion: "Santa Fe",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/garaffa.png",
+        descripcion: "Graduada en la UNR , obtiene el postgrado en Arquitectura del Paisaje de la Escuela de Arquitectura y Estudios Urbanos de la Universidad Torcuato Di Tella (2017), y maestranda de la cohorte 2022 de la Maestría en Proyecto Arquitectónico de la FADU UBA. Socia en la oficina de arquitectura Estudio Garaffa Arquitectos, donde explora el espacio, las proporciones, la luz, las técnicas y los materiales en la configuración de las dinámicas del habitar contemporáneo. Profundiza en cada proyecto la potencialidad de la construcción en movimiento, asunto en el cual se encuentra actualmente desarrollando lo que denomina “escenarios experimentales transdisciplinares”, a través de iniciativas proyectuales con distintos alcances y variadas escalas: lo territorial, lo urbano, lo artístico, el espacio arquitectónico donde explora el espacio, las proporciones, la luz, las técnicas y los materiales en la configuración de las dinámicas del habitar contemporáneo. "
+    },
+     {
+        dia: "25",
+        horaInicio: "15:30",
+        horaFin: "16:00",
+        tipo: "CONFERENCIA",
+        titulo: "Lic. Ana María Ricci",
+        tematica: "PAISAJE",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Ana María Ricci",
+        profesion: "Buenos Aires",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/García-Ricci.png",
+        descripcion: "Su mirada, vinculada a la relación entre territorio, paisaje, naturaleza y ciudad, se suma a este espacio de encuentro y reflexión que propone pensar nuestras ciudades desde el agua como elemento estructurante. Es una de las fundadoras de Bulla, un proyecto cultural dedicado al paisaje, que opera en diálogo constante con las problemáticas territoriales, ambientales y urbanas, actuales y futuras. "
+    },
+    {
+        dia: "25",
+        horaInicio: "16:00",
+        horaFin: "16:30",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Enk Te Winkel",
+        tematica: "PAISAJE",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Enk Te Winkel",
+        profesion: "San Pablo (Brasil)",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/winkel.png",
+        descripcion: "Arquitecto y cofundador del estudio brasileño Vão Arquitetura en São Paulo. Su trabajo destaca por un enfoque transdisciplinario que cruza el urbanismo, la arquitectura residencial y las bellas artes con un fuerte trasfondo técnico y experimental. Los proyectos de Vão parten de una base teórica, técnica y experimental, que investiga características singulares del territorio de operación, que pueden integrarse al razonamiento proyectual."
+    },
     {
         dia: "26",
         horaInicio: "09:00",
@@ -604,6 +724,20 @@ function mostrarActividades() {
         const tarjeta =
             document.createElement("article");
 
+        const fotos = Array.isArray(actividad.foto)
+            ? actividad.foto
+            : [actividad.foto];
+
+        const imagenesPresentador = fotos
+            .map(foto => `
+                <img
+                    src="${foto}"
+                    alt="${actividad.presentador}"
+                    class="foto-presentador"
+                >
+            `)
+            .join("");
+
 
         tarjeta.classList.add("actividad");
 
@@ -647,11 +781,9 @@ function mostrarActividades() {
 
                 <div class="presentador-principal">
 
-                    <img
-                        src="${actividad.foto}"
-                        alt="${actividad.presentador}"
-                        class="foto-presentador"
-                    >
+                    <div class="fotos-presentador">
+                        ${imagenesPresentador}
+                    </div>
 
                     <div class="presentador-datos">
                         <strong>${actividad.presentador}</strong>

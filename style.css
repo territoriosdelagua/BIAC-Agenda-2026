@@ -864,6 +864,16 @@ main {
     padding-right: 0;
 }
 
+.fotos-presentador {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
 .actividad-acciones {
     position: absolute;
 
