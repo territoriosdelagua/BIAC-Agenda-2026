@@ -216,8 +216,8 @@ const actividades = [
         tematica: "ARQUITECTURA",
         sede: "MACC",
         ubicacion: "CORRIENTES",
-        presentador: "Estudio GAA-Corrientes ",
-        profesion: "Patrimonio, Arquitectura y Fotografía",
+        presentador: "Cátedra de Arquitectura Moderna en Misiones",
+        profesion: "Mgter. Arq. Mario Daniel Melgarejo, Alina Bistoletti y Arq. Cecilia Coccato",
         foto: "images/expositores/misionesmoderno.png",
         estado: "CONFIRMADA",
         descripcion: "Es una exposición que reúne la historia de la arquitectura moderna en Misiones teniendo en cuenta su contexto político, económico, social y territorial. La muestra se centra en el período comprendido entre 1955 y 1965, destacando la influencia de la modernidad en la arquitectura de la región y su relación con el paisaje natural y urbano."
@@ -541,7 +541,18 @@ const sedes = {
 
         mapa:
             "https://www.google.com/maps/place/Museo+de+Arte+Contempor%C3%A1neo/@-27.4666503,-58.8393177,17z/data=!3m1!4b1!4m6!3m5!1s0x94456d0047ac09a7:0xd89f7756a3f1e2f9!8m2!3d-27.4666503!4d-58.8367428!16s%2Fg%2F11x95nmyqp?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
-    }
+    },
+    "PARQUE ÁVALOS": {
+
+        direccion:
+            "Concepcion del Bermejo 1367, Resistencia, Chaco",
+        descripcion:
+            "Parque público con espacios verdes y áreas recreativas.",
+        imagen:
+            "images/sedes/parque.jpg",
+        mapa:
+            "https://www.google.com/maps/place/%C3%81valos+Park/@-27.4309102,-58.9857559,17z/data=!3m1!4b1!4m6!3m5!1s0x94450c440f7de9f3:0xf4786b0e630c01c4!8m2!3d-27.4309102!4d-58.983181!16s%2Fg%2F1tddyw4z?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D"
+    }   
 
 };
 
