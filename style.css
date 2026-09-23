@@ -106,9 +106,8 @@ body {
 .navbar {
     position: absolute;
 
-    top: 25px;
-    left: 0;
-
+    right: 24px;
+    top: 20px;
     padding: 35px 55px;
 
     z-index: 10;
@@ -634,6 +633,8 @@ main {
 .actividad {
     display: grid;
 
+    position: relative;
+
     /* horario | actividad | expositor */
     grid-template-columns: 120px minmax(0, 1fr) 370px;
 
@@ -849,6 +850,8 @@ main {
     min-width: 0;
 
     height: 100%;
+
+    padding-top: 58px;
 }
 
 .presentador-principal {
@@ -857,11 +860,20 @@ main {
     align-items: center;
 
     gap: 14px;
+
+    padding-right: 0;
+}
+
+.actividad-acciones {
+    position: absolute;
+
+    right: 24px;
+    top: 20px;
 }
 
 .foto-presentador {
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
 
     flex-shrink: 0;
 
@@ -884,7 +896,6 @@ main {
 
 .presentador-datos strong {
     color: var(--texto);
-
     font-size: 0.95rem;
 
     line-height: 1.25;
@@ -1512,8 +1523,8 @@ main {
     }
 
     .foto-presentador {
-        width: 120px;
-        height: 120px;
+        width: 135px;
+        height: 135px;
     }
 
     /* Opiniones */
@@ -1647,6 +1658,7 @@ main {
 
     .filtros {
         padding: 20px;
+        padding-bottom: 58px;
         gap: 20px;
     }
 
@@ -1773,21 +1785,33 @@ main {
         grid-row: 3;
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
-        align-items: center;
+        align-items: flex-start;
 
         gap: 12px;
 
         margin-top: 5px;
-        padding: 0;
+        padding: 58px 0 0;
 
         text-align: left;
     }
 
+    .presentador-principal {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        padding-right: 0;
+    }
+
+    .actividad-acciones {
+        right: 20px;
+        top: 20px;
+    }
+
     .foto-presentador {
-        width: 100px;
-        height: 100px;
+        width: 115px;
+        height: 115px;
     }
 
     .presentador-datos {
