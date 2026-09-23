@@ -147,6 +147,68 @@ const actividades = [
         estado: "CONFIRMADA",
         descripcion: "Dos modelos de desarrollo en su borde costero: la Costanera antigua y la Costanera nueva."
     },
+    {
+        dia: "24",
+        horaInicio: "15:30",
+        horaFin: "17:00",
+        tipo: "EXPOSICION",
+        titulo: "2 Orillas Emergentes: Encarnación-Posadas.",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "ENNE Arquitectura Y Estudio Arquitectava.",
+        profesion: "Curador: Mg. Arq. Juan Guidura. ",
+        foto: "images/expositores/enne.png",
+        estado: "CONFIRMADA",
+        descripcion: "Se trata de un bloque expositivo que reúne estudios de Encarnación y Posadas. Desde Encarnación, Arquitectava presenta una arquitectura experimental que incorpora el agua como elemento compositivo, ya sea integrándola a los espacios o mediante dispositivos para su reutilización. Sus cuatro integrantes —Keiji Ishibashi, Giselle Montanholi, Micaela Ortiz y Melisa Fariña— representan una generación que busca interpretar creativamente su territorio. Desde Posadas, ENNE, de Marcela Gadea y Matías Taborda, muestra cómo la arquitectura puede integrarse armónicamente al paisaje misionero, sus arroyos y bosques."
+    },
+      {
+        dia: "24",
+        horaInicio: "16:30",
+        horaFin: "18:00",
+        tipo: "EXPOSICION",
+        titulo: "OBERÁ EMERGENTE",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Arq. Valeria Jaros,  Arq. Alejandro Cieplinski y Arq. Nicolás Cieplinski",
+        profesion: "Moderador: Arq. Lucas Fulquet",
+        foto: "images/expositores/obera.png",
+        estado: "CONFIRMADA",
+        descripcion: "Presenta una propuesta joven que reúne estudios emergentes de Oberá y otras ciudades como Encarnación, Posadas y Santa Fe, explorando también la idea de desterritorializaciones materiales. Desde Oberá, Valeria Jaros y NSKi Arquitectura, integrado por Alejandro y Nicolás Cieplinski, representan a una nueva generación de profesionales que propone nuevas miradas sobre la arquitectura desde los territorios interiores. La ciudad cuenta además con una joven Facultad de Arquitectura, que promete nuevos aportes desde el interior del país. Placa 2: Valeria Jaros. Placas 3, 4 y 5: NSKi Arquitectura. "
+    },
+  {
+        dia: "24",
+        horaInicio: "17:00",
+        horaFin: "18:00",
+        tipo: "EXPOSICION",
+        titulo: "Santa Fe Emergente",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Arq, Fiama Serra, Arq. Camila Turtula y Arq. Francisco Garrido.",
+        profesion: "Moderan:Federico Cairoli y Arq. Javier Mendiondo ",
+        foto: "images/expositores/santafe-emergentes.png",
+        estado: "CONFIRMADA",
+        descripcion: "Santa Fe, ciudad tan antigua como Corrientes, se relaciona con sus ríos y bañados en tensión. Como todos en nuestras geografías. A veces como condición que nos limita otras veces como condición que nos expande. Emergentes Santa Fe, curado por Javier Mendiondo y Federico Cairoli es una exposición en la que los arquitectas Fiama Serra  y Camila Turtula  y el arquitecto Francisco Garrido, exponen esta relación con el agua."
+    },
+    {
+        dia: "24",
+        horaInicio: "20:00",
+        horaFin: "22:00",
+        tipo: "MUESTRAS",
+        titulo: "Inauguración de la muestra en el MACC",
+        tematica: "TODAS",
+        sede: "MACC",
+        ubicacion: "CORRIENTES",
+        presentador: "Estudio GAA-Corrientes ",
+        profesion: "Arquitectura, Arte y Fotografía",
+        foto: "images/expositores/muestraenelmacc.jpeg",
+        estado: "CONFIRMADA",
+        descripcion: "Es una muestra que reúne arquitectura, arte, fotografía y registro audiovisual del NEA y de otras regiones, para pensar el agua como condición del territorio y de nuestras formas de habitar."
+    },
+
+
 
 
 

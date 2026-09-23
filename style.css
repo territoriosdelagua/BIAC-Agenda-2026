@@ -748,6 +748,8 @@ main {
     font-size: 0.86rem;
 
     line-height: 1.4;
+
+    text-align: justify;
 }
 
 
@@ -858,8 +860,8 @@ main {
 }
 
 .foto-presentador {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 
     flex-shrink: 0;
 
@@ -1510,8 +1512,8 @@ main {
     }
 
     .foto-presentador {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     /* Opiniones */
@@ -1784,8 +1786,8 @@ main {
     }
 
     .foto-presentador {
-        width: 82px;
-        height: 82px;
+        width: 100px;
+        height: 100px;
     }
 
     .presentador-datos {
