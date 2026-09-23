@@ -15,15 +15,15 @@ const actividades = [
         horaInicio: "10:00",
         horaFin: "10:30",
         tipo: "CONFERENCIA",
-        titulo: "Desterritorialización material",
+        titulo: "Arq. Alberto Mahave: Desterritorialización material",
         tematica: "TERRITORIO",
         sede: "MACC",
         ubicacion: "CORRIENTES",
-        presentador: "FAU-UNNE",
+        presentador: "Alberto Mahave",
         profesion: "Arquitectura y Urbanismo",
-        foto: "images/expositores/fau.png",
+        foto: "images/expositores/mahave.png",
         estado: "CONFIRMADA",
-        descripcion: "Expone el arquitecto Alberto Mahave."
+        descripcion: "Alberto Mahave es arquitecto egresado de la Facultad de Arquitectura y Urbanismo de la Universidad Nacional del Nordeste (UNNE), magíster en Arquitectura con mención Proyecto por la Universidad Nacional del Litoral y doctorando en Arquitectura. Es docente e investigador de la FAU-UNNE, donde desarrolla su actividad en torno a la forma, la materialidad y el espacio arquitectónico. Su trabajo integra arquitectura, espacio público y planificación territorial, con especial interés en las relaciones entre ciudad, paisaje y ambiente. Su producción académica y profesional aborda particularmente las problemáticas urbanas y ambientales de Resistencia y su sistema hídrico, explorando estrategias para construir espacios públicos más habitables, inclusivos y sostenibles."
     },
 
     {
