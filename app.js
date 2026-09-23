@@ -244,17 +244,65 @@ const actividades = [
 
     {
         dia: "26",
-        horaInicio: "10:00",
-        horaFin: "11:00",
-        tipo: "MESA",
-        titulo: "Actividad de prueba 6",
-        tematica: "CIUDAD",
-        sede: "Auditorio Julián Zini",
+        horaInicio: "09:00",
+        horaFin: "09:30",
+        tipo: "MUESTRAS",
+        titulo: "Recorrido guiado del Teatro Oficial Juan de Vera",
+        tematica: "TODAS",
+        sede: "Teatro Oficial Juan de Vera",
         ubicacion: "CORRIENTES",
-        presentador: "Presentador/a de prueba",
-        profesion: "Arquitectura",
-        estado: "CANCELADA",
-        descripcion: "Breve descripción de prueba para visualizar cómo se verá la actividad."
+        presentador: "Gobierno de Corrientes",
+        profesion: "Artes y Cultura",
+        foto: "images/expositores/teatro.jpg",
+        estado: "CONFIRMADA",
+        descripcion: "Recorrido guiado por el histórico Teatro Oficial Juan de Vera, destacando su arquitectura y patrimonio cultural."
+    },
+    
+    {
+        dia: "26",
+        horaInicio: "09:30",
+        horaFin: "10:30",
+        tipo: "MUESTRAS",
+        titulo: "MUSIC SESSION",
+        tematica: "TODAS",
+        sede: "Teatro Oficial Juan de Vera",
+        ubicacion: "CORRIENTES",
+        presentador: "Polifónico de Corrientes ",
+        profesion: "Música y Cultura",
+        foto: "images/expositores/coro.jpg",
+        estado: "CONFIRMADA",
+        descripcion: "Experiencia musical que explora la Bienal a través del arte."
+    },
+    
+    {
+        dia: "26",
+        horaInicio: "10:30",
+        horaFin: "10:45",
+        tipo: "MUESTRAS",
+        titulo: "Entrega de reconocimientos",
+        tematica: "TODAS",
+        sede: "Teatro Oficial Juan de Vera",
+        ubicacion: "CORRIENTES",
+        presentador: "Comité Organizador de la Bienal 2026",
+        profesion: "Luciana Rosso",
+        foto: "images/expositores/bienal.png",
+        estado: "CONFIRMADA",
+        descripcion: "Entrega de reconocimientos a los participantes y colaboradores de la Bienal 2026."
+    },
+    {
+        dia: "26",
+        horaInicio: "10:45",
+        horaFin: "11:30",
+        tipo: "MESAS",
+        titulo: "MANIFIESTO DE LA BIENAL 2026",
+        tematica: "TODAS",
+        sede: "Teatro Oficial Juan de Vera",
+        ubicacion: "CORRIENTES",
+        presentador: "Comité Organizador de la Bienal 2026",
+        profesion: "Leandro Rosso, Juan Guidura, Carlos Gómez Sierra y Javier Mendiondo",
+        foto: "images/expositores/bienal.png",
+        estado: "CONFIRMADA",
+        descripcion: "Manifiesto final de la Bienal 2026, destacando los logros y aprendizajes del evento, así como la visión para futuras ediciones."
     }
 
 ];
