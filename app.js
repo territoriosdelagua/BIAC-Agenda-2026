@@ -126,7 +126,7 @@ const actividades = [
         tematica: "ARQUITECTURA",
         sede: "Auditorio Julián Zini",
         ubicacion: "CORRIENTES",
-        presentador: "Colegio de Arquitectura y Urbanismo de la Provincia de Santa Fe",
+        presentador: "Colegio de Arquitectura y Urbanismo de Santa Fe",
         profesion: "Arquitectura y Urbanismo",
         foto: "images/expositores/santafe.jpg",
         estado: "CONFIRMADA",
