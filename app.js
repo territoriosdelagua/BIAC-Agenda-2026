@@ -314,7 +314,7 @@ const actividades = [
         profesion: "Buenos Aires",
         estado: "CONFIRMADA",
         foto: [
-            "images/expositores/tagliabue.png",
+            "images/expositores/Tagliabue.png",
             "images/expositores/koen.png"
         ],
         descripcion: "Magdalena Tagliabue y  Carolina Koen  son docentes en FADU-UBA y en Universidad Torcuato Di Tella. Juntas abordarán ejes claves: Suelos, Ecologías, Territorios y Comunidades —conceptos que ya desarrollaron para una edición especial de la revista PLOT y que ahora potencian la reflexión curatorial de la Bienal."
@@ -406,7 +406,7 @@ const actividades = [
         presentador: "Enk Te Winkel",
         profesion: "San Pablo (Brasil)",
         estado: "CONFIRMADA",
-        foto: "images/expositores/winkel.png",
+        foto: "images/expositores/Winkel.png",
         descripcion: "Arquitecto y cofundador del estudio brasileño Vão Arquitetura en São Paulo. Su trabajo destaca por un enfoque transdisciplinario que cruza el urbanismo, la arquitectura residencial y las bellas artes con un fuerte trasfondo técnico y experimental. Los proyectos de Vão parten de una base teórica, técnica y experimental, que investiga características singulares del territorio de operación, que pueden integrarse al razonamiento proyectual."
     },
     {
