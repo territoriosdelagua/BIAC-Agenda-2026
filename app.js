@@ -77,7 +77,7 @@ const actividades = [
         horaInicio: "12:00",
         horaFin: "12:30",
         tipo: "CONFERENCIA",
-        titulo: "FTyCA UNCA",
+        titulo: "FTyCA UNCA: Plan de Ordenamiento Territorial El Rodeo - Las Juntas",
         tematica: "ARQUITECTURA",
         sede: "MACC",
         ubicacion: "CORRIENTES",
