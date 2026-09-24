@@ -32,7 +32,7 @@ const actividades = [
         horaFin: "11:00",
         tipo: "CONFERENCIA",
         titulo: "Misiones Moderna (1955-1965): Acervo y patrimonio arquitectónico",
-        tematica: "CIUDAD",
+        tematica: "ARQUITECTURA",
         sede: "MACC",
         ubicacion: "CORRIENTES",
         presentador: "Cátedra de Arquitectura Moderna en Misiones",
