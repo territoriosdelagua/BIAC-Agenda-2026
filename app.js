@@ -424,6 +424,55 @@ const actividades = [
         foto: "images/expositores/Winkel.png",
         descripcion: "Arquitecto y cofundador del estudio brasileño Vão Arquitetura en São Paulo. Su trabajo destaca por un enfoque transdisciplinario que cruza el urbanismo, la arquitectura residencial y las bellas artes con un fuerte trasfondo técnico y experimental. Los proyectos de Vão parten de una base teórica, técnica y experimental, que investiga características singulares del territorio de operación, que pueden integrarse al razonamiento proyectual."
     },
+     
+     {
+        dia: "25",
+        horaInicio: "18:00",
+        horaFin: "18:30",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Luciano Kruk",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Luciano Kruk",
+        profesion: "Buenos Aires",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/Kruk.png",
+        descripcion: "Luciano Kruk es un arquitecto graduado en la UBA. Fundó su estudio en 2012 donde trabaja desarrollando numerosos proyectos de vivienda individual y colectiva. Su mirada  supo crear una relación provechosa entre arquitectura, arena, bosques y agua."
+    },
+     {
+        dia: "25",
+        horaInicio: "18:30",
+        horaFin: "19:00",
+        tipo: "CONFERENCIA",
+        titulo: " Arq. Álvaro Di Bernardo y Arq. Mauricio Ortiz",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Di Bernardo y Ortiz",
+        profesion: "Corrientes",
+        estado: "CONFIRMADA",
+        foto: [
+            "images/expositores/dibernardo.png",
+            "images/expositores/ortiz.png"
+        ],
+        descripcion: "Como dice la publicación de la revista ARQ: “Dos jóvenes arquitectos correntinos, Álvaro Di Bernardo y Mauricio Ortiz , socios en el estudio ODB Arquitectos, demostraron que un proyecto comercial puede ser un valioso aporte público y, de paso, ganar un premio nacional que pone en el mapa a una región que pareciera relegada”. En esta edición, la bienal da la bienvenida al  dúo ganador de los premios ARQ FADEA 2024 de la región NEA y a su proyecto el parque Guacaras, construido en Santa Ana Corrientes. El paisaje de lagunas que se recorre para llegar hasta el centro gastronómico, parece un preámbulo de esta estructura que también aparece como en armonía y tensión, como una arquitectura en un equilibrio inestable, como el del ambiente que la rodea."
+    },
+    {
+        dia: "25",
+        horaInicio: "19:00",
+        horaFin: "19:30",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Malena Pérez",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Malena Pérez",
+        profesion: "Chaco",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/malena.png",
+        descripcion: "La arquitecta Malena Pérez es miembro de E3estudio y Profesora Titular Carrera de Arquitectura UCA BA. Desarrolla su obra, entre otras ciudades, en Resistencia donde sus numerosas construcciones palafíticas habitan el territorio como posándose sutilmente en él. Su obra articula los tres tiempos: habita lo estable —una estructura palafítica— para cohabitar lo permanente —el agua— considerando lo inestable —el suelo inundable. No lucha contra la inundación, la incorpora como paisaje y como modo de vida. La inundación no es un hecho aberrante de la naturaleza, sino la presencia natural del agua en su territorio; es el momento en que el territorio del agua se hace visible y lo humano se muestra inteligente: atraviesa un momento estable, mientras todo lo demás cambia."
+    },
     {
         dia: "26",
         horaInicio: "09:00",
