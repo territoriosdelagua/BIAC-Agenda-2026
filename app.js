@@ -72,6 +72,21 @@ const actividades = [
         estado: "CONFIRMADA",
         descripcion: "El Taller Horizontal es un espacio de la FADU UNL que desarrolla una investigación continua sobre cómo proyectar en estos territorios frágiles e inciertos. Cada fragmento de esta geografía insular aporta enseñanzas a un proyecto infinito: imaginar el río Paraná como un laboratorio de proyectos. Esta investigación de varios años propone un enfoque amplio que interpela los diferentes puntos de contacto entre tierra y agua."
     },
+    {
+        dia: "24",
+        horaInicio: "12:00",
+        horaFin: "12:30",
+        tipo: "CONFERENCIA",
+        titulo: "Universidad Católica de Buenos Aires",
+        tematica: "ARQUITECTURA",
+        sede: "MACC",
+        ubicacion: "CORRIENTES",
+        presentador: "UCA",
+        profesion: "Arquitectura",
+        foto: "images/expositores/uca.jpeg",
+        estado: "CONFIRMADA",
+        descripcion: "Presentación de la Carrera de Arquitectura de la Universidad Católica Argentina, con sede en Buenos Aires. Participan Gastón Catelani, coordinador de la carrera; Juan Pablo Porta, profesor de Exploración y Experimentación Proyectual 4; Malena Pérez, profesora de Producción y Desarrollo Tecnológico 4; y estudiantes de segundo año de la carrera."
+    },
   
     {
         dia: "24",
@@ -130,7 +145,7 @@ const actividades = [
         presentador: "Colegio de Arquitectura y Urbanismo de Santa Fe",
         profesion: "Arquitectura y Urbanismo",
         foto: "images/expositores/santafe.jpg",
-        estado: "CONFIRMADA",
+        estado: "CANCELADA",
         descripcion: "Cultura Palafítica en el territorio y la arquitectura, su influencia en la producción proyectual y material local."
     },
     {
