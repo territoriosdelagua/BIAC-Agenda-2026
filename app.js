@@ -74,6 +74,21 @@ const actividades = [
     },
     {
         dia: "24",
+        horaInicio: "12:00",
+        horaFin: "12:30",
+        tipo: "CONFERENCIA",
+        titulo: "FTyCA UNCA",
+        tematica: "ARQUITECTURA",
+        sede: "MACC",
+        ubicacion: "CORRIENTES",
+        presentador: "Arq. Nicolás Lindow y Arq. María Emilia Canclini",
+        profesion: "Arquitectura",
+        foto: "images/expositores/catamarca.png ",
+        estado: "CONFIRMADA",
+        descripcion: " Nicolás Lindow y María Emilia Canclini son arquitectos vinculados a la enseñanza y la práctica profesional en Catamarca. Lindow desarrolla actividad docente en la carrera de Arquitectura de la Universidad Nacional de Catamarca y posee una amplia trayectoria en la representación institucional de la profesión. Canclini desarrolla su práctica en los campos de la arquitectura, el diseño de interiores y la iluminación arquitectónica, incorporando herramientas contemporáneas como el modelado BIM. Su trabajo articula formación, práctica y experimentación proyectual, atendiendo a las particularidades del contexto y a las nuevas herramientas para pensar y construir arquitectura."
+    },
+    {
+        dia: "24",
         horaInicio: "14:00",
         horaFin: "14:30",
         tipo: "CONFERENCIA",
