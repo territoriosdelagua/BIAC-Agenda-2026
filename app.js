@@ -72,21 +72,7 @@ const actividades = [
         estado: "CONFIRMADA",
         descripcion: "El Taller Horizontal es un espacio de la FADU UNL que desarrolla una investigación continua sobre cómo proyectar en estos territorios frágiles e inciertos. Cada fragmento de esta geografía insular aporta enseñanzas a un proyecto infinito: imaginar el río Paraná como un laboratorio de proyectos. Esta investigación de varios años propone un enfoque amplio que interpela los diferentes puntos de contacto entre tierra y agua."
     },
-    {
-        dia: "24",
-        horaInicio: "12:00",
-        horaFin: "12:30",
-        tipo: "CONFERENCIA",
-        titulo: "FTyCA UNCA: Plan de Ordenamiento Territorial El Rodeo - Las Juntas",
-        tematica: "ARQUITECTURA",
-        sede: "MACC",
-        ubicacion: "CORRIENTES",
-        presentador: "Arq. Nicolás Lindow y Arq. María Emilia Canclini",
-        profesion: "Arquitectura",
-        foto: "images/expositores/catamarca.png ",
-        estado: "CONFIRMADA",
-        descripcion: " Nicolás Lindow y María Emilia Canclini son arquitectos vinculados a la enseñanza y la práctica profesional en Catamarca. Lindow desarrolla actividad docente en la carrera de Arquitectura de la Universidad Nacional de Catamarca y posee una amplia trayectoria en la representación institucional de la profesión. Canclini desarrolla su práctica en los campos de la arquitectura, el diseño de interiores y la iluminación arquitectónica, incorporando herramientas contemporáneas como el modelado BIM. Su trabajo articula formación, práctica y experimentación proyectual, atendiendo a las particularidades del contexto y a las nuevas herramientas para pensar y construir arquitectura."
-    },
+  
     {
         dia: "24",
         horaInicio: "14:00",
@@ -162,10 +148,25 @@ const actividades = [
         estado: "CONFIRMADA",
         descripcion: "Dos modelos de desarrollo en su borde costero: la Costanera antigua y la Costanera nueva."
     },
+      {
+        dia: "24",
+        horaInicio: "16:30",
+        horaFin: "17:00",
+        tipo: "CONFERENCIA",
+        titulo: "FTyCA UNCA: Plan de Ordenamiento Territorial El Rodeo - Las Juntas",
+        tematica: "ARQUITECTURA",
+        sede: "MACC",
+        ubicacion: "CORRIENTES",
+        presentador: "Arq. Nicolás Lindow y Arq. María Emilia Canclini",
+        profesion: "Arquitectura",
+        foto: "images/expositores/catamarca.png ",
+        estado: "REPROGRAMADA",
+        descripcion: " Nicolás Lindow y María Emilia Canclini son arquitectos vinculados a la enseñanza y la práctica profesional en Catamarca. Lindow desarrolla actividad docente en la carrera de Arquitectura de la Universidad Nacional de Catamarca y posee una amplia trayectoria en la representación institucional de la profesión. Canclini desarrolla su práctica en los campos de la arquitectura, el diseño de interiores y la iluminación arquitectónica, incorporando herramientas contemporáneas como el modelado BIM. Su trabajo articula formación, práctica y experimentación proyectual, atendiendo a las particularidades del contexto y a las nuevas herramientas para pensar y construir arquitectura."
+    },
     {
         dia: "24",
-        horaInicio: "15:30",
-        horaFin: "17:00",
+        horaInicio: "17:00",
+        horaFin: "17:30",
         tipo: "EXPOSICION",
         titulo: "2 Orillas Emergentes: Encarnación-Posadas.",
         tematica: "ARQUITECTURA",
@@ -179,7 +180,7 @@ const actividades = [
     },
       {
         dia: "24",
-        horaInicio: "16:30",
+        horaInicio: "17:30",
         horaFin: "18:00",
         tipo: "EXPOSICION",
         titulo: "OBERÁ EMERGENTE",
@@ -194,8 +195,8 @@ const actividades = [
     },
   {
         dia: "24",
-        horaInicio: "17:00",
-        horaFin: "18:00",
+        horaInicio: "18:00",
+        horaFin: "18:30",
         tipo: "EXPOSICION",
         titulo: "Santa Fe Emergente",
         tematica: "ARQUITECTURA",
@@ -472,6 +473,51 @@ const actividades = [
         estado: "CONFIRMADA",
         foto: "images/expositores/malena.png",
         descripcion: "La arquitecta Malena Pérez es miembro de E3estudio y Profesora Titular Carrera de Arquitectura UCA BA. Desarrolla su obra, entre otras ciudades, en Resistencia donde sus numerosas construcciones palafíticas habitan el territorio como posándose sutilmente en él. Su obra articula los tres tiempos: habita lo estable —una estructura palafítica— para cohabitar lo permanente —el agua— considerando lo inestable —el suelo inundable. No lucha contra la inundación, la incorpora como paisaje y como modo de vida. La inundación no es un hecho aberrante de la naturaleza, sino la presencia natural del agua en su territorio; es el momento en que el territorio del agua se hace visible y lo humano se muestra inteligente: atraviesa un momento estable, mientras todo lo demás cambia."
+    },
+    {
+        dia: "25",
+        horaInicio: "19:30",
+        horaFin: "20:00",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Daniel Cella",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Daniel Cella",
+        profesion: "Misiones",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/cellas.png",
+        descripcion: "Cella, graduado en la Universidad de Belgrano, desde 1987 reside en Posadas, donde funda el Estudio Cella. El estudio Cella  realiza proyectos de obras de arquitectura y urbanismo para distintos usos en la región mesopotámica, incluyendo intervenciones arquitectónicas en edificios que forman parte del patrimonio arquitectónico de la provincia, en proyectos para la generación de nuevos espacios públicos e intervenciones y ensanches urbanos, como también de iniciativas de recuperación del paisaje en áreas protegidas y costeras.Intervenciones tecnológicas y materiales exquisitas en ladrillo, el proyecto en proceso de construcción de la ex Usina en Posadas y la propuesta para el borde de la costanera también en Posadas, son obras que Daniel Cella Expondrá en la bienal TDA 2026, mostrando la íntima y sensible relación de sus proyectos con su medio natural tan particular como es la provincia en que habitan. "
+    },
+    {
+        dia: "25",
+        horaInicio: "20:00",
+        horaFin: "20:30",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. Bruno Stagno",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "Bruno Stagno",
+        profesion: "Costa Rica",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/Stagno.png",
+        descripcion: "Stagno es un arquitecto que visita a la bienal desde Costa Rica para aportar su búsqueda con enfoque por el aprovechamiento máximo de las variables y recursos climáticos de los trópicos, en el uso de materiales y mano de obra locales y enfatizando en la biodiversidad tropical para el diseño del paisajismo. La arquitectura tropical construida y sus manifiestos hacen de Stagno  un imprescindible del estudio en la relación clima y arquitectura para nuestra geografía."
+    },
+    {
+        dia: "25",
+        horaInicio: "20:30",
+        horaFin: "21:00",
+        tipo: "CONFERENCIA",
+        titulo: "Arq. José Cubilla",
+        tematica: "ARQUITECTURA",
+        sede: "Auditorio Julián Zini",
+        ubicacion: "CORRIENTES",
+        presentador: "José Cubilla",
+        profesion: "Paraguay",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/cubilla.png",
+        descripcion: "El arquitecto paraguayo, José Cubilla,  centra su obra en 2 elementos del paisaje: la tierra y el agua. Precisamente estos dos materiales no son solo su principal componente constructivo, sino también los elementos fundamentales para conectar lo que construye con el paisaje local. Su enfoque, denominado a veces 'arquitectura silenciosa', encuentra el equilibrio entre el entorno natural y las necesidades humanas, aprovechando la abundancia de la tierra paraguaya, rica en hierro, arcilla y territorios dominados por el agua."
     },
     {
         dia: "26",
