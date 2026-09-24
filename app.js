@@ -66,7 +66,7 @@ const actividades = [
         tematica: "ARQUITECTURA",
         sede: "MACC",
         ubicacion: "CORRIENTES",
-        presentador: "UNNE, UCA y UNL",
+        presentador: "UNL",
         profesion: "Arquitectura",
         foto: "images/expositores/horizontal.png",
         estado: "CONFIRMADA",
