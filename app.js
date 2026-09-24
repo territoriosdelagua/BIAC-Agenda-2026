@@ -283,7 +283,7 @@ const actividades = [
         ubicacion: "CORRIENTES",
         presentador: "Gabriel Santinelli",
         profesion: "Buenos Aires",
-        estado: "CONFIRMADA",
+        estado: "CANCELADA",
         foto: "images/expositores/santinelli.png",
         descripcion: "El agua como eje estructurante del territorio y la mirada crítica sobre nuestros paisajes confluyen en la participación del Arq. Gabriel Santinelli, quien lleva  a este encuentro la  experiencia de un trabajo que articula territorio y arquitectura como partes inseparables del mismo paisaje . Su enfoque —dejar de mirar para ver— resuena con el espíritu de una bienal que invita a repensar los territorios del agua desde una perspectiva crítica, interdisciplinaria y situada en el Nordeste argentino. Santinelli representa los paisajes a la deriva y las arquitecturas que esos territorios producen y transforman . "
     },
@@ -533,6 +533,21 @@ const actividades = [
         estado: "CONFIRMADA",
         foto: "images/expositores/cubilla.png",
         descripcion: "El arquitecto paraguayo, José Cubilla,  centra su obra en 2 elementos del paisaje: la tierra y el agua. Precisamente estos dos materiales no son solo su principal componente constructivo, sino también los elementos fundamentales para conectar lo que construye con el paisaje local. Su enfoque, denominado a veces 'arquitectura silenciosa', encuentra el equilibrio entre el entorno natural y las necesidades humanas, aprovechando la abundancia de la tierra paraguaya, rica en hierro, arcilla y territorios dominados por el agua."
+    },
+       {
+        dia: "25",
+        horaInicio: "21:30",
+        horaFin: "23:00",
+        tipo: "MUESTRAS",
+        titulo: "COTA 50-50: La memoria del río",
+        tematica: "ARQUITECTURA",
+        sede: "PARQUE ÁVALOS",
+        ubicacion: "CHACO",
+        presentador: "CULATA JOVAI  y ESTE NORTE",
+        profesion: "Paraguay(Asuncón)-Chaco",
+        estado: "CONFIRMADA",
+        foto: "images/expositores/cota.png",
+        descripcion: "El Pabellón Efímero que se propone para el Parque Ávalos, en el marco de la Bienal de Arquitectura 2026 'Territorios del Agua', nace de una convicción: devolverle a la ciudad su vínculo con el Río Negro. No se trata de ocupar el borde, sino de habitarlo. De transformar la orilla en un umbral sensible donde la sociedad y el agua puedan reencontrarse después de décadas de espaldas. El concepto estructurante Se tomo la cota +50,50 —la altura histórica de las crecidas del río— y la elevamos de un dato técnico a un gesto arquitectónico."
     },
     {
         dia: "26",
