@@ -363,7 +363,7 @@ const actividades = [
         profesion: "California",
         estado: "CONFIRMADA",
         foto: "images/expositores/Heras.png",
-        descripcion: "El estudio del Español Juan Heras instalado en California, Estados Unidos, trabaja las escalas de Planes urbanos y territoriales pero tambíen arquitectura en mas de 10 países, varios de ellos latinoamericanos"
+        descripcion: "El estudio del español Juan Heras instalado en California, Estados Unidos, trabaja las escalas de Planes urbanos y territoriales pero tambíen arquitectura en mas de 10 países, varios de ellos latinoamericanos"
     },
     {
         dia: "25",
